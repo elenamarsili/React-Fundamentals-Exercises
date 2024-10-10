@@ -1,5 +1,6 @@
 import "./App.css";
 import logo from "./logo.svg";
+import MovieCard from "./MovieCard";
 
 // Display a list of movies where each movie contains a list of users that favorited it.
 // For detailed instructions, refer to Instructions.md.
@@ -101,6 +102,13 @@ const App = () => {
         <h1 className="App-title">ReactND - Coding Practice</h1>
       </header>
       <h2>How Popular is Your Favorite Movie?</h2>
+      <ul>
+      {
+        Object.values(movies).map((movie)=> 
+          <MovieCard movie={movie} profiles={profiles} users={users}/>
+        )
+      }
+      </ul>
     </div>
   );
 };
