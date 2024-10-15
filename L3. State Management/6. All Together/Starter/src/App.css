@@ -30,3 +30,69 @@
     transform: rotate(360deg);
   }
 }
+
+.open-form-button {
+  margin-bottom: 10px;
+  background-color: lightblue;
+  border: 1px solid teal;
+  color: teal;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 8px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.open-form-button:disabled {
+  background-color: #cccccc; /* Light grey */
+  color: #666666; /* Darker grey */
+  cursor: not-allowed; /* Change cursor to not-allowed */
+}
+
+.close-form-button {
+  margin-bottom: 20px;
+  background-color: rgb(243, 222, 222);
+  border: 1px solid rgb(246, 113, 64);
+  color: rgb(246, 113, 64);
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 8px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.players {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.player-card {
+  border: 1px solid black;
+  width: 200px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.input {
+  width: 400px;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.error-message {
+  color: red;
+}
