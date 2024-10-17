@@ -83,6 +83,12 @@ h2 {
   color: black;
 }
 
+.submit-button:disabled {
+  background-color: #cccccc; /* Light grey */
+  color: #666666; /* Darker grey */
+  cursor: not-allowed; /* Change cursor to not-allowed */
+}
+
 .submit-button:hover,
 .submit-button:active,
 .submit-button:focus {
